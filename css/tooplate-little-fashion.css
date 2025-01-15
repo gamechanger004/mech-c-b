@@ -520,6 +520,7 @@ strong {
 
 .slick-title {
   color: var(--white-color);
+  font-size: 40px; 
 }
 
 .slick-custom {
