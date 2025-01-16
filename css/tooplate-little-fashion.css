@@ -522,7 +522,25 @@ strong {
   color: var(--white-color);
   font-size: 40px; 
 }
+@media (max-width: 992px) {
+  .slick-title {
+    font-size: 32px;
+  }
+}
 
+/* Small devices (phones, 576px and up) */
+@media (max-width: 768px) {
+  .slick-title {
+    font-size: 28px;
+  }
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 576px) {
+  .slick-title {
+    font-size: 24px;
+  }
+}
 .slick-custom {
   position: relative;
 }
