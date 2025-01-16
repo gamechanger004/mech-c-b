@@ -15,6 +15,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+                        
 
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/bootstrap-icons.css" rel="stylesheet">
@@ -30,7 +33,28 @@ https://www.tooplate.com/view/2127-little-fashion
 
 -->
     </head>
+    <style>
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: #000; /* Arrow background color */
+            border-radius: 100%; /* Circular arrows */
+            padding: 20px; /* Arrow size */
+        }
+        .carousel-control-prev, .carousel-control-next {
+            top: 34%;
+            transform: translateY(-50%);
+            width: auto;
+            height: auto;
+        }
     
+        .custom-prev {
+            left: -30px; /* Adjust for left arrow placement */
+        }
+    
+        .custom-next {
+            right: -30px; /* Adjust for right arrow placement */
+        }
+    </style>
     <body>
 
         <section class="preloader">
@@ -100,292 +124,535 @@ https://www.tooplate.com/view/2127-little-fashion
                     <div class="row">
                         
                         <div class="col-12">
+                            <h2 class="mb-5">Flooring</h2>
+                        </div>
+                        <div id="flooringCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <!-- Left and Right Arrows -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#flooringCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#flooringCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        
+                            <!-- Carousel Items -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-12 mb-3">
+                                            <div class="product-thumb">
+                                                <a href="">
+                                                    <img src="images/f7.jpeg" class="img-fluid product-image" alt="Bamboo Flooring Image">
+                                                </a>
+                                                <div class="product-info d-flex">
+                                                    <div>
+                                                        <h5 class="product-title mb-0">
+                                                            <a href="" class="product-title-link">Bamboo Flooring</a>
+                                                        </h5>
+                                                        <p class="product-p">An eco-friendly alternative, bamboo flooring is both strong and stylish, offering a unique grain pattern.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-12 mb-3">
+                                            <div class="product-thumb">
+                                                <a href="">
+                                                    <img src="images/f3.jpg" class="img-fluid product-image" alt="Marble Flooring Image">
+                                                </a>
+                                                <div class="product-info d-flex">
+                                                    <div>
+                                                        <h5 class="product-title mb-0">
+                                                            <a href="" class="product-title-link">Marble Flooring</a>
+                                                        </h5>
+                                                        <p class="product-p">Marble flooring offers a luxurious and sophisticated appearance with unique veining patterns.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-12 mb-3">
+                                            <div class="product-thumb">
+                                                <a href="">
+                                                    <img src="images/f4.jpg" class="img-fluid product-image" alt="Vinyl Flooring Image">
+                                                </a>
+                                                <div class="product-info d-flex">
+                                                    <div>
+                                                        <h5 class="product-title mb-0">
+                                                            <a href="" class="product-title-link">Vinyl Flooring</a>
+                                                        </h5>
+                                                        <p class="product-p">Vinyl is versatile and water-resistant, making it ideal for areas prone to moisture.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-12 mb-3">
+                                            <div class="product-thumb">
+                                                <a href="">
+                                                    <img src="images/f8.webp" class="img-fluid product-image" alt="SPC Flooring Image">
+                                                </a>
+                                                <div class="product-info d-flex">
+                                                    <div>
+                                                        <h5 class="product-title mb-0">
+                                                            <a href="" class="product-title-link">SPC Flooring</a>
+                                                        </h5>
+                                                        <p class="product-p">SPC (Stone Plastic Composite) flooring is a highly durable and water-resistant flooring option known for its realistic wood grain texture and easy installation.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-12 mb-3">
+                                            <div class="product-thumb">
+                                                <a href="">
+                                                    <img src="images/f5.webp" class="img-fluid product-image" alt="Carpet Flooring Image">
+                                                </a>
+                                                <div class="product-info d-flex">
+                                                    <div>
+                                                        <h5 class="product-title mb-0">
+                                                            <a href="" class="product-title-link">Carpet Flooring</a>
+                                                        </h5>
+                                                        <p class="product-p">Carpets provide warmth and comfort underfoot, available in numerous textures and colors to suit different aesthetics.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-12 mb-3">
+                                            <div class="product-thumb">
+                                                <a href="">
+                                                    <img src="images/f5.jpeg" class="img-fluid product-image" alt="Tile Flooring Image">
+                                                </a>
+                                                <div class="product-info d-flex">
+                                                    <div>
+                                                        <h5 class="product-title mb-0">
+                                                            <a href="" class="product-title-link">Tile Flooring</a>
+                                                        </h5>
+                                                        <p class="product-p">Tiles, whether ceramic or porcelain, are durable and come in various designs, suitable for both modern and traditional settings.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
                             <h2 class="mb-5">Curtains</h2>
                         </div>
-
-                        <div class="col-lg-4 col-12 mb-3">
-                            <div class="product-thumb">
-                                <a href="product-detail.html">
-                                    <img src="images/p1.jpeg" class="img-fluid product-image" alt="">
-                                </a>
-
-                                <div class="product-info d-flex">
-                                    <div>
-                                        <h5 class="product-title mb-0">
-                                            <a href="product-detail.html" class="product-title-link">Sheer Curtains</a>
-                                        </h5>
-
-                                        <p class="product-p">Lightweight, translucent curtains that allow diffused light into the room, creating a soft and airy look.</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-12 mb-3">
-                            <div class="product-thumb">
-                                <a href="product-detail.html">
-                                    <img src="images/p2.jpeg" class="img-fluid product-image" alt="">
-                                </a>
-
+                        <div id="flooringCarousel2" class="carousel slide" data-bs-ride="carousel">
+                            <!-- Left and Right Arrows -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#flooringCarousel2" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#flooringCarousel2" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        
+                            <!-- Carousel Items -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-12 mb-3">
+                                            <div class="product-thumb">
+                                                <a href="">
+                                                    <img src="images/p1.jpeg" class="img-fluid product-image" alt="">
+                                                </a>
                 
-
-                                <div class="product-info d-flex">
-                                    <div>
-                                        <h5 class="product-title mb-0">
-                                            <a href="product-detail.html" class="product-title-link"> Grommet Curtains</a>
-                                        </h5>
-
-                                        <p class="product-p">Curtains with metal rings at the top for easy sliding and a modern appearance.</p>
+                                                <div class="product-info d-flex">
+                                                    <div>
+                                                        <h5 class="product-title mb-0">
+                                                            <a href="" class="product-title-link">Sheer Curtains</a>
+                                                        </h5>
+                
+                                                        <p class="product-p">Lightweight, translucent curtains that allow diffused light into the room, creating a soft and airy look.</p>
+                                                    </div>
+                
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                        <div class="col-lg-4 col-12 mb-3">
+                                            <div class="product-thumb">
+                                                <a href="">
+                                                    <img src="images/p2.jpeg" class="img-fluid product-image" alt="">
+                                                </a>
+                
+                                
+                
+                                                <div class="product-info d-flex">
+                                                    <div>
+                                                        <h5 class="product-title mb-0">
+                                                            <a href="" class="product-title-link"> Grommet Curtains</a>
+                                                        </h5>
+                
+                                                        <p class="product-p">Curtains with metal rings at the top for easy sliding and a modern appearance.</p>
+                                                    </div>
+                
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                        <div class="col-lg-4 col-12">
+                                            <div class="product-thumb">
+                                                <a href="">
+                                                    <img src="images/p3.jpeg" class="img-fluid product-image" alt="">
+                                                </a>
+                
+                                                <div class="product-info d-flex">
+                                                    <div>
+                                                        <h5 class="product-title mb-0">
+                                                            <a href="" class="product-title-link">Rod Pocket Curtains</a>
+                                                        </h5>
+                
+                                                        <p class="product-p">Have a sewn-in pocket that slides onto a rod, offering a traditional, gathered look.</p>
+                                                    </div>
+                
+                                                </div>
+                                            </div>
+                                        </div>  
                                     </div>
-
+                                </div>
+                        
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-12 mb-3">
+                                            <div class="product-thumb">
+                                                <a href="">
+                                                    <img src="images/pp.jpeg" class="img-fluid product-image" alt="">
+                                                </a>
+                
+                                                <div class="product-info d-flex">
+                                                    <div>
+                                                        <h5 class="product-title mb-0">
+                                                            <a href="" class="product-title-link">Pinch pleat Curtains</a>
+                                                        </h5>
+                
+                                                        <p class="product-p">Pinch pleat curtains are elegantly gathered at the top with stitched pleats, providing a formal and traditional appearance. </p>
+                                                    </div>
+                
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-12 mb-3">
+                                            <div class="product-thumb">
+                                                <a href="">
+                                                    <img src="images/pi.jpeg" class="img-fluid product-image" alt="">
+                                                </a>
+                
+                                
+                
+                                                <div class="product-info d-flex">
+                                                    <div>
+                                                        <h5 class="product-title mb-0">
+                                                            <a href="" class="product-title-link">Motorized Curtains</a>
+                                                        </h5>
+                
+                                                        <p class="product-p">Motorized curtains can be controlled with a remote or even smartphone apps. They are perfect for large windows</p>
+                                                    </div>
+                
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                        <div class="col-lg-4 col-12">
+                                            <div class="product-thumb">
+                                                <a href="">
+                                                    <img src="images/bb.webp" class="img-fluid product-image" alt="">
+                                                </a>
+                
+                                                <div class="product-info d-flex">
+                                                    <div>
+                                                        <h5 class="product-title mb-0">
+                                                            <a href="" class="product-title-link">Blackout Curtains</a>
+                                                        </h5>
+                
+                                                        <p class="product-p">Blackout curtains are designed to block light, offering enhanced privacy and helping to maintain room temperature by preventing heat loss or gain.</p>
+                                                    </div>
+                
+                                                </div>
+                                            </div>
+                                        </div>                                        
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-lg-4 col-12">
-                            <div class="product-thumb">
-                                <a href="product-detail.html">
-                                    <img src="images/p3.jpeg" class="img-fluid product-image" alt="">
-                                </a>
-
-                                <div class="product-info d-flex">
-                                    <div>
-                                        <h5 class="product-title mb-0">
-                                            <a href="product-detail.html" class="product-title-link">Rod Pocket Curtains</a>
-                                        </h5>
-
-                                        <p class="product-p">Have a sewn-in pocket that slides onto a rod, offering a traditional, gathered look.</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
                         <div class="col-12">
                             <h2 class="mb-5">Blinds</h2>
                         </div>
-
-                        <div class="col-lg-4 col-12 mb-3">
-                            <div class="product-thumb">
-                                <a href="product-detail.html">
-                                    <img src="images/p4.jpeg" class="img-fluid product-image" alt="">
-                                </a>
-
-                               
-                                <div class="product-info d-flex">
-                                    <div>
-                                        <h5 class="product-title mb-0">
-                                            <a href="product-detail.html" class="product-title-link"> Vertical Blinds</a>
-                                        </h5>
-
-                                        <p class="product-p">Tall slats that run vertically, ideal for large windows and sliding glass doors.</p>
+                        <div id="flooringCarousel3" class="carousel slide" data-bs-ride="carousel">
+                            <!-- Left and Right Arrows -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#flooringCarousel3" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#flooringCarousel3" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        
+                            <!-- Carousel Items -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-12 mb-3">
+                                            <div class="product-thumb">
+                                                <a href="">
+                                                    <img src="images/p4.jpeg" class="img-fluid product-image" alt="">
+                                                </a>
+                
+                                               
+                                                <div class="product-info d-flex">
+                                                    <div>
+                                                        <h5 class="product-title mb-0">
+                                                            <a href="" class="product-title-link"> Vertical Blinds</a>
+                                                        </h5>
+                
+                                                        <p class="product-p">Tall slats that run vertically, ideal for large windows and sliding glass doors.</p>
+                                                    </div>
+                
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                        <div class="col-lg-4 col-12 mb-3">
+                                            <div class="product-thumb">
+                                                <a href="">
+                                                    <img src="images/p5.jpeg" class="img-fluid product-image" alt="">
+                                                </a>
+                
+                                                
+                                                <div class="product-info d-flex">
+                                                    <div>
+                                                        <h5 class="product-title mb-0">
+                                                            <a href="" class="product-title-link">Venetian Blinds</a>
+                                                        </h5>
+                
+                                                        <p class="product-p">Horizontal slats that can be tilted to control light and privacy.</p>
+                                                    </div>
+                
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                        <div class="col-lg-4 col-12 mb-3">
+                                            <div class="product-thumb">
+                                                <a href="">
+                                                    <img src="images/p6.jpeg" class="img-fluid product-image" alt="">
+                                                </a>
+                
+                                                <div class="product-top d-flex">
+                                                    <a href="#" class="bi-heart-fill product-icon ms-auto"></a>
+                                                </div>
+                
+                                                <div class="product-info d-flex">
+                                                    <div>
+                                                        <h5 class="product-title mb-0">
+                                                            <a href="" class="product-title-link"> Roman Blinds</a>
+                                                        </h5>
+                
+                                                        <p class="product-p">Fabric blinds that fold into soft pleats when raised, giving a sophisticated look.</p>
+                                                    </div>
+                
+                                                </div>
+                                            </div>
+                                        </div>  
                                     </div>
-
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-12 mb-3">
-                            <div class="product-thumb">
-                                <a href="product-detail.html">
-                                    <img src="images/p5.jpeg" class="img-fluid product-image" alt="">
-                                </a>
-
+                        
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-12 mb-3">
+                                            <div class="product-thumb">
+                                                <a href="">
+                                                    <img src="images/b9.webp" class="img-fluid product-image" alt="">
+                                                </a>
+                
+                                                <div class="product-info d-flex">
+                                                    <div>
+                                                        <h5 class="product-title mb-0">
+                                                            <a href="" class="product-title-link">Roller Blinds </a>
+                                                        </h5>
+                
+                                                        <p class="product-p">Sleek and minimalistic, roller blinds are made of a single sheet of fabric that can be rolled up or down to adjust light and privacy. </p>
+                                                    </div>
+                
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-12 mb-3">
+                                            <div class="product-thumb">
+                                                <a href="">
+                                                    <img src="images/b12.jpg" class="img-fluid product-image" alt="">
+                                                </a>
+                
                                 
-                                <div class="product-info d-flex">
-                                    <div>
-                                        <h5 class="product-title mb-0">
-                                            <a href="product-detail.html" class="product-title-link">Venetian Blinds</a>
-                                        </h5>
-
-                                        <p class="product-p">Horizontal slats that can be tilted to control light and privacy.</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-12 mb-3">
-                            <div class="product-thumb">
-                                <a href="product-detail.html">
-                                    <img src="images/p6.jpeg" class="img-fluid product-image" alt="">
-                                </a>
-
-                                <div class="product-top d-flex">
-                                    <a href="#" class="bi-heart-fill product-icon ms-auto"></a>
-                                </div>
-
-                                <div class="product-info d-flex">
-                                    <div>
-                                        <h5 class="product-title mb-0">
-                                            <a href="product-detail.html" class="product-title-link"> Roman Blinds</a>
-                                        </h5>
-
-                                        <p class="product-p">Fabric blinds that fold into soft pleats when raised, giving a sophisticated look.</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <h2 class="mb-5">Flooring</h2>
-                        </div>
-                        
-                        <div class="col-lg-4 col-12 mb-3">
-                            <div class="product-thumb">
-                                <a href="product-detail.html">
-                                    <img src="images/f7.jpeg" class="img-fluid product-image" alt="Bamboo Flooring Image">
-                                </a>
-                                <div class="product-info d-flex">
-                                    <div>
-                                        <h5 class="product-title mb-0">
-                                            <a href="product-detail.html" class="product-title-link">Bamboo Flooring</a>
-                                        </h5>
-                                        <p class="product-p">An eco-friendly alternative, bamboo flooring is both strong and stylish, offering a unique grain pattern.</p>
+                
+                                                <div class="product-info d-flex">
+                                                    <div>
+                                                        <h5 class="product-title mb-0">
+                                                            <a href="" class="product-title-link"> Panel Blinds</a>
+                                                        </h5>
+                
+                                                        <p class="product-p">Made from natural or faux wood, these blinds add warmth and elegance to interiors. </p>
+                                                    </div>
+                
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                        <div class="col-lg-4 col-12">
+                                            <div class="product-thumb">
+                                                <a href="">
+                                                    <img src="images/b13.jpeg" class="img-fluid product-image" alt="">
+                                                </a>
+                
+                                                <div class="product-info d-flex">
+                                                    <div>
+                                                        <h5 class="product-title mb-0">
+                                                            <a href="" class="product-title-link"> Aluminium Blinds</a>
+                                                        </h5>
+                
+                                                        <p class="product-p">Durable and sleek, aluminium blinds are lightweight and resistant to moisture, making them ideal for kitchens and bathrooms. </p>
+                                                    </div>
+                
+                                                </div>
+                                            </div>
+                                        </div>                                        
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
-                        <div class="col-lg-4 col-12 mb-3">
-                            <div class="product-thumb">
-                                <a href="product-detail.html">
-                                    <img src="images/f3.jpg" class="img-fluid product-image" alt="Marble Flooring Image">
-                                </a>
-                                <div class="product-info d-flex">
-                                    <div>
-                                        <h5 class="product-title mb-0">
-                                            <a href="product-detail.html" class="product-title-link">Marble Flooring</a>
-                                        </h5>
-                                        <p class="product-p">Marble flooring offers a luxurious and sophisticated appearance with unique veining patterns.</p>
+                                <div class="col-12">
+                                    <h2 class="mb-5">Wallworks</h2>
+                                </div>
+                                <div id="flooringCarouse4" class="carousel slide" data-bs-ride="carousel">
+                                    <!-- Left and Right Arrows -->
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#flooringCarouse4" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#flooringCarouse4" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                
+                                    <!-- Carousel Items -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-12 mb-3">
+                                                    <div class="product-thumb">
+                                                        <a href="">
+                                                            <img src="images/wa5.jpeg" class="img-fluid product-image" alt="Abstract Wall Art Image">
+                                                        </a>
+                                                        <div class="product-info d-flex">
+                                                            <div>
+                                                                <h5 class="product-title mb-0">
+                                                                    <a href="" class="product-title-link">Abstract Wall Art</a>
+                                                                </h5>
+                                                                <p class="product-p">Unique and modern abstract wall art that adds character and depth to any space.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-lg-4 col-12 mb-3">
+                                                    <div class="product-thumb">
+                                                        <a href="">
+                                                            <img src="images/wa4.webp" class="img-fluid product-image" alt="Wall Murals Image">
+                                                        </a>
+                                                        <div class="product-info d-flex">
+                                                            <div>
+                                                                <h5 class="product-title mb-0">
+                                                                    <a href="" class="product-title-link">Wall Murals</a>
+                                                                </h5>
+                                                                <p class="product-p">Large-scale wall murals designed to transform rooms with vibrant visuals and intricate details.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-lg-4 col-12 mb-3">
+                                                    <div class="product-thumb">
+                                                        <a href="">
+                                                            <img src="images/wa3.jpeg" class="img-fluid product-image" alt="Textured Wall Panels Image">
+                                                        </a>
+                                                        <div class="product-info d-flex">
+                                                            <div>
+                                                                <h5 class="product-title mb-0">
+                                                                    <a href="" class="product-title-link">Textured Wall Panels</a>
+                                                                </h5>
+                                                                <p class="product-p">Elegant textured wall panels that enhance the ambiance with a modern and stylish finish.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                
+                                        <div class="carousel-item">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-12 mb-3">
+                                                    <div class="product-thumb">
+                                                        <a href="">
+                                                            <img src="images/wa6.jpeg" class="img-fluid product-image" alt="SPC Flooring Image">
+                                                        </a>
+                                                        <div class="product-info d-flex">
+                                                            <div>
+                                                                <h5 class="product-title mb-0">
+                                                                    <a href="" class="product-title-link">3D WallArt</a>
+                                                                </h5>
+                                                                <p class="product-p">Utilizes digital techniques to create three-dimensional visuals, offering depth and perspective that traditional wall art may lack.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-12 mb-3">
+                                                    <div class="product-thumb">
+                                                        <a href="">
+                                                            <img src="images/wa7.jpeg" class="img-fluid product-image" alt="Carpet Flooring Image">
+                                                        </a>
+                                                        <div class="product-info d-flex">
+                                                            <div>
+                                                                <h5 class="product-title mb-0">
+                                                                    <a href="" class="product-title-link">Mixed Media Art</a>
+                                                                </h5>
+                                                                <p class="product-p">Combines various digital mediums, such as photography, painting, and digital manipulation, to produce complex and layered artworks.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-12 mb-3">
+                                                    <div class="product-thumb">
+                                                        <a href="">
+                                                            <img src="images/wa9.jpeg" class="img-fluid product-image" alt="Tile Flooring Image">
+                                                        </a>
+                                                        <div class="product-info d-flex">
+                                                            <div>
+                                                                <h5 class="product-title mb-0">
+                                                                    <a href="" class="product-title-link">Digital Art</a>
+                                                                </h5>
+                                                                <p class="product-p">A broad category encompassing artworks created entirely through digital means, including illustrations, paintings, and animations.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                               
                             </div>
-                        </div>
-                        
-                        <div class="col-lg-4 col-12 mb-3">
-                            <div class="product-thumb">
-                                <a href="product-detail.html">
-                                    <img src="images/f4.jpg" class="img-fluid product-image" alt="Vinyl Flooring Image">
-                                </a>
-                                <div class="product-info d-flex">
-                                    <div>
-                                        <h5 class="product-title mb-0">
-                                            <a href="product-detail.html" class="product-title-link">Vinyl Flooring</a>
-                                        </h5>
-                                        <p class="product-p">Vinyl is versatile and water-resistant, making it ideal for areas prone to moisture.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-4 col-12 mb-3">
-                            <div class="product-thumb">
-                                <a href="product-detail.html">
-                                    <img src="images/f8.webp" class="img-fluid product-image" alt="SPC Flooring Image">
-                                </a>
-                                <div class="product-info d-flex">
-                                    <div>
-                                        <h5 class="product-title mb-0">
-                                            <a href="product-detail.html" class="product-title-link">SPC Flooring</a>
-                                        </h5>
-                                        <p class="product-p">SPC (Stone Plastic Composite) flooring is a highly durable and water-resistant flooring option known for its realistic wood grain texture and easy installation.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-4 col-12 mb-3">
-                            <div class="product-thumb">
-                                <a href="product-detail.html">
-                                    <img src="images/f5.webp" class="img-fluid product-image" alt="Carpet Flooring Image">
-                                </a>
-                                <div class="product-info d-flex">
-                                    <div>
-                                        <h5 class="product-title mb-0">
-                                            <a href="product-detail.html" class="product-title-link">Carpet Flooring</a>
-                                        </h5>
-                                        <p class="product-p">Carpets provide warmth and comfort underfoot, available in numerous textures and colors to suit different aesthetics.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-4 col-12 mb-3">
-                            <div class="product-thumb">
-                                <a href="product-detail.html">
-                                    <img src="images/f5.jpeg" class="img-fluid product-image" alt="Tile Flooring Image">
-                                </a>
-                                <div class="product-info d-flex">
-                                    <div>
-                                        <h5 class="product-title mb-0">
-                                            <a href="product-detail.html" class="product-title-link">Tile Flooring</a>
-                                        </h5>
-                                        <p class="product-p">Tiles, whether ceramic or porcelain, are durable and come in various designs, suitable for both modern and traditional settings.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-12">
-                            <h2 class="mb-5">Wallworks</h2>
-                        </div>
-                        
-                        <div class="col-lg-4 col-12 mb-3">
-                            <div class="product-thumb">
-                                <a href="product-detail.html">
-                                    <img src="images/wa5.jpeg" class="img-fluid product-image" alt="Abstract Wall Art Image">
-                                </a>
-                                <div class="product-info d-flex">
-                                    <div>
-                                        <h5 class="product-title mb-0">
-                                            <a href="product-detail.html" class="product-title-link">Abstract Wall Art</a>
-                                        </h5>
-                                        <p class="product-p">Unique and modern abstract wall art that adds character and depth to any space.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-4 col-12 mb-3">
-                            <div class="product-thumb">
-                                <a href="product-detail.html">
-                                    <img src="images/wa4.webp" class="img-fluid product-image" alt="Wall Murals Image">
-                                </a>
-                                <div class="product-info d-flex">
-                                    <div>
-                                        <h5 class="product-title mb-0">
-                                            <a href="product-detail.html" class="product-title-link">Wall Murals</a>
-                                        </h5>
-                                        <p class="product-p">Large-scale wall murals designed to transform rooms with vibrant visuals and intricate details.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-4 col-12 mb-3">
-                            <div class="product-thumb">
-                                <a href="product-detail.html">
-                                    <img src="images/wa3.jpeg" class="img-fluid product-image" alt="Textured Wall Panels Image">
-                                </a>
-                                <div class="product-info d-flex">
-                                    <div>
-                                        <h5 class="product-title mb-0">
-                                            <a href="product-detail.html" class="product-title-link">Textured Wall Panels</a>
-                                        </h5>
-                                        <p class="product-p">Elegant textured wall panels that enhance the ambiance with a modern and stylish finish.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </section>
-
-        </main>
-
+                            </section>
+                        </main>
+ 
         <footer class="site-footer">
             <div class="container">
                 <div class="row">
