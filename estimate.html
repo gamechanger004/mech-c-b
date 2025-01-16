@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Cost Estimator</title>
+
+        <!-- CSS FILES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/slick.css"/>
+
+        <link href="css/tooplate-little-fashion.css" rel="stylesheet">
+        
+<!--
+
+Tooplate 2127 Little Fashion
+
+https://www.tooplate.com/view/2127-little-fashion
+
+-->
+    </head>
+    <style>
+        .form-control {
+           margin-bottom: 15px; /* Adjust spacing as needed */
+        }
+    </style>
+    <body>
+
+        <section class="preloader">
+            <div class="spinner">
+                <span class="sk-inner-circle"></span>
+            </div>
+        </section>
+    
+        <main>
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                        <strong><span>Mechatron</span> Services</strong>
+                    </a>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="products.html">Products</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="faq.html">FAQs</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="cost_estimator.html">Cost Estimator</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+            <header class="site-header section-padding d-flex justify-content-center align-items-center">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-10 col-12">
+                            <h1>
+                                <span class="d-block text-primary">Estimate your project cost</span>
+                                <span class="d-block text-dark">quick and easy</span>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="contact section-padding">
+                <div class="container">
+                    <div class="row d-flex align-items-start">
+                        <div class="col-lg-6 col-12">
+                            <h2 class="mb-4">Get your <span>Estimate</span></h2>
+
+                            <form id="costEstimatorForm" class="contact-form me-lg-5 pe-lg-3" role="form">
+
+                                <div class="form-floating">
+                                    
+                                    <select id="service" class="form-control" onchange="toggleFields()" required>
+                                        <option value="">Select a Service</option>
+                                        <option value="curtains">Curtains</option>
+                                        <option value="flooring">Flooring</option>
+                                        <option value="blinds">Blinds</option>
+                                        <option value="walls">Walls</option>
+                                    </select>
+                                    <div id="curtainsFields" >
+                                        
+                                        <input type="number" id="curtainWidth" class="form-control" placeholder="Enter width">
+
+                                        
+                                        <input type="number" id="curtainHeight" class="form-control" placeholder="Enter height">
+
+                                       
+                                        <select id="curtainMaterial" class="form-control">
+                                          <option value="10">Cotton ($10/m²)</option>
+                                          <option value="15">Silk ($15/m²)</option>
+                                          <option value="20">Blackout ($20/m²)</option>
+                                        </select>
+
+                                    </div>
+                                                            
+                                    <!-- Flooring Section -->
+                                    <div id="flooringFields" style="display: none;">
+                                       
+                                        <input type="number" id="floorArea" class="form-control" placeholder="Enter area">
+                                        
+                                        <select id="floorMaterial" class="form-control">
+                                            <option value="5">Laminate ($5/sqft)</option>
+                                            <option value="10">Hardwood ($10/sqft)</option>
+                                            <option value="8">Tile ($8/sqft)</option>
+                                        </select>
+
+                                    </div>
+                        
+                                    <!-- Blinds Section -->
+                                    <div id="blindsFields"  style="display: none;">
+                                       
+                                        <input type="number" id="blindWidth" class="form-control" placeholder="Enter width">
+                                        
+                                        <input type="number" id="blindHeight" class="form-control" placeholder="Enter height">
+                                       
+                                        <select id="blindMaterial" class="form-control">
+                                            <option value="12">Roller ($12/m²)</option>
+                                            <option value="18">Vertical ($18/m²)</option>
+                                            <option value="25">Motorized ($25/m²)</option>
+                                        </select>
+
+                                    </div>
+                        
+                                    <!-- Walls Section -->
+                                    <div id="wallsFields" style="display: none;">
+                                       
+                                        <input type="number" id="wallArea" class="form-control" placeholder="Enter wall area">
+
+                                        
+                                        <select id="wallMaterial" class="form-control">
+                                            <option value="1.5">Paint ($1.5/sqft)</option>
+                                            <option value="3">Wallpaper ($3/sqft)</option>
+                                            <option value="5">Textured Finish ($5/sqft)</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-5 col-6" >
+                                        <button type="button" onclick="calculateCost()" class="btn btn-primary form-control text-white">
+                                            Calculate Cost
+                                        </button>
+                                    </div>
+                                </div>  
+                            </form>
+                        </div>
+            
+                    <div class="col-lg-6 col-12">
+                        <div id="result" class="contact-info form-control" style="display: none;">
+                            <h6 class="mb-3 text-primary">Estimated Cost</h6>
+                            <p id="costResult" class="text-muted"></p>
+                        </div>
+                    </div>
+                </div>
+                       
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-10 me-auto mb-4">
+                        <h4 class="text-white mb-8"><a href="index.html">Mechatron</a><br>Services</h4>
+                        <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">Copyright &copy; 2025 <strong>Mechatron </strong></p>
+                        <br>
+                    </div>
+
+                    <div class="col-lg-5 col-8">
+                        <h5 class="text-white mb-3">Sitemap</h5>
+
+                        <ul class="footer-menu d-flex flex-wrap">
+                            <li class="footer-menu-item"><a href="about.html" class="footer-menu-link">Story</a></li>
+
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Products</a></li>
+
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Privacy policy</a></li>
+
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">FAQs</a></li>
+
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-4">
+                        <h5 class="text-white mb-3">Social</h5>
+
+                        <ul class="social-icon">
+
+                            <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+
+                            <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
+
+                            <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+
+                            <li><a href="#" class="social-icon-link bi-skype"></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/Headroom.js"></script>
+        <script src="js/jQuery.headroom.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/custom.js"></script>
+        <script>
+           function toggleFields() {
+            const service = document.getElementById('service').value;
+            document.getElementById('curtainsFields').style.display = service === 'curtains' ? 'block' : 'none';
+            document.getElementById('flooringFields').style.display = service === 'flooring' ? 'block' : 'none';
+            document.getElementById('blindsFields').style.display = service === 'blinds' ? 'block' : 'none';
+            document.getElementById('wallsFields').style.display = service === 'walls' ? 'block' : 'none';
+        }
+
+        function calculateCost() {
+            const service = document.getElementById('service').value;
+            let cost = 0;
+
+            if (service === 'curtains') {
+                const curtainWidth = parseFloat(document.getElementById('curtainWidth').value) || 0;
+                const curtainHeight = parseFloat(document.getElementById('curtainHeight').value) || 0;
+                const curtainMaterialCost = parseFloat(document.getElementById('curtainMaterial').value) || 0;
+                cost = curtainWidth * curtainHeight * 2 * curtainMaterialCost; // Fullness factor 2
+            } else if (service === 'flooring') {
+                const floorArea = parseFloat(document.getElementById('floorArea').value) || 0;
+                const floorMaterialCost = parseFloat(document.getElementById('floorMaterial').value) || 0;
+                cost = floorArea * floorMaterialCost;
+            } else if (service === 'blinds') {
+                const blindWidth = parseFloat(document.getElementById('blindWidth').value) || 0;
+                const blindHeight = parseFloat(document.getElementById('blindHeight').value) || 0;
+                const blindMaterialCost = parseFloat(document.getElementById('blindMaterial').value) || 0;
+                cost = blindWidth * blindHeight * blindMaterialCost;
+            } else if (service === 'walls') {
+                const wallArea = parseFloat(document.getElementById('wallArea').value) || 0;
+                const wallMaterialCost = parseFloat(document.getElementById('wallMaterial').value) || 0;
+                cost = wallArea * wallMaterialCost;
+            }
+
+            document.getElementById('costResult').textContent = `Total Estimated Cost: $${cost.toFixed(2)}`;
+            document.getElementById('result').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
